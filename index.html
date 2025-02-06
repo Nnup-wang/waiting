@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>简单静态网站</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #f0f0f0;
+      font-family: Arial, sans-serif;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .background {
+      position: absolute;
+      top: 20%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 250px;
+      font-weight: bold;
+      color: rgba(255, 69, 0, 0.2); /* 更显眼的橙红色 */
+      z-index: 0;
+      user-select: none;
+      pointer-events: none;
+    }
+
+    .content {
+      position: relative;
+      z-index: 1;
+      font-size: 24px;
+      text-align: center;
+      color: #333;
+      max-width: 60%; /* 限制文本宽度 */
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+  <div class="background">123</div>
+  <div class="content">
+    这是居中的一段文字。文本内容被限制在一定的宽度内，以避免与背景数字发生重叠。
+  </div>
+</body>
+</html>
